@@ -1,5 +1,7 @@
 # Stock Photos
 
+Stock photo generator using unsplash API
+
 #### Getting started:
 
 ```
