@@ -1,3 +1,4 @@
+import { logDOM } from '@testing-library/dom';
 import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import Photo from './Photo';
@@ -16,6 +17,7 @@ function App() {
     try {
       const response = await fetch(url);
       const data = await response.json();
+      console.log(data);
     } catch (error) {
       setLoading(false);
       console.log(error);
