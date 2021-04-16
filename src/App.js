@@ -13,7 +13,7 @@ function App() {
   const fetchImages = async () => {
     setLoading(true);
     let url;
-    url = `${mainUrl}?clientID=kArhkzpnqkz5W0hrtlMqRMujR5BKkK67sZ90OOgvXsc`;
+    url = `${mainUrl}?client_id=kArhkzpnqkz5W0hrtlMqRMujR5BKkK67sZ90OOgvXsc`;
     try {
       const response = await fetch(url);
       const data = await response.json();
