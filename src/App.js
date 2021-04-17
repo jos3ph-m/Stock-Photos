@@ -27,11 +27,18 @@ function App() {
   useEffect(() => {
     fetchImages();
   }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('hello');
+  };
   return (
     <main>
       <section className="search">
         <form className="search-form">
           <input type="text" placeholder="search" className="form-input" />
+          <button type="submit" className="submit-btn" onClick={handleSubmit}>
+            <FaSearch />
+          </button>
         </form>
       </section>
     </main>
