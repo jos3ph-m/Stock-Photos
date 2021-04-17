@@ -27,7 +27,13 @@ function App() {
   useEffect(() => {
     fetchImages();
   }, []);
-  return <h2>stock photos starter</h2>;
+  return (
+    <main>
+      <section className="search">
+        <form className="search-form"></form>
+      </section>
+    </main>
+  );
 }
 
 export default App;
