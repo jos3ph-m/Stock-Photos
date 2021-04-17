@@ -17,6 +17,8 @@ function App() {
     try {
       const response = await fetch(url);
       const data = await response.json();
+
+      setLoading(false);
     } catch (error) {
       setLoading(false);
       console.log(error);
