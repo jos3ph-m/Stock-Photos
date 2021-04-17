@@ -31,7 +31,7 @@ function App() {
     <main>
       <section className="search">
         <form className="search-form">
-          <input type="text" />
+          <input type="text" placeholder="search" className="form-input" />
         </form>
       </section>
     </main>
