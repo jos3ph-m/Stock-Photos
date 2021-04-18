@@ -11,7 +11,7 @@ const Photo = ({
   },
 }) => {
   return (
-    <article classname="photo">
+    <article className="photo">
       <img src={regular} alt={alt_description} />
       <div className="photo-info">
         <div>
@@ -19,7 +19,7 @@ const Photo = ({
           <p>{likes} likes</p>
         </div>
         <a href={portfolio_url}>
-          <img src={medium} alt={name} />
+          <img src={medium} alt={name} className="user-img" />
         </a>
       </div>
     </article>
