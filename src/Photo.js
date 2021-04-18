@@ -18,7 +18,9 @@ const Photo = ({
           <h4>{name}</h4>
           <p>{likes} likes</p>
         </div>
-        <a href={portfolio_url}></a>
+        <a href={portfolio_url}>
+          <img src={medium} alt={name} />
+        </a>
       </div>
     </article>
   );
