@@ -47,6 +47,7 @@ function App() {
             return <Photo key={index} {...image} />;
           })}
         </div>
+        {}
       </section>
     </main>
   );
