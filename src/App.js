@@ -27,6 +27,7 @@ function App() {
   useEffect(() => {
     fetchImages();
   }, []);
+  useEffect(() => {});
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('hello');
