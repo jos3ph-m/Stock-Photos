@@ -29,6 +29,7 @@ function App() {
   }, []);
   useEffect(() => {
     const event = window.addEventListener('scroll', () => {});
+    return () => window.removeEventListener('scroll', event);
   }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
