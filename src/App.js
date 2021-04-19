@@ -27,7 +27,9 @@ function App() {
   useEffect(() => {
     fetchImages();
   }, []);
-  useEffect(() => {});
+  useEffect(() => {
+    const event = window.addEventListener('scroll', () => {});
+  }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('hello');
