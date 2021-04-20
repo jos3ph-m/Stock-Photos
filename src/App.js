@@ -35,7 +35,9 @@ function App() {
         !loading &&
         window.innerHeight + window.scrollY >= document.body.scrollHeight - 20
       ) {
-        console.log('it worked');
+        setPage((oldPage) => {
+          return oldPage + 1;
+        });
       }
     });
     return () => window.removeEventListener('scroll', event);
