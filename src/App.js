@@ -28,7 +28,7 @@ function App() {
   };
   useEffect(() => {
     fetchImages();
-  }, []);
+  }, [page]);
   useEffect(() => {
     const event = window.addEventListener('scroll', () => {
       if (
