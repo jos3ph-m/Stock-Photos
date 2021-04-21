@@ -29,7 +29,7 @@ function App() {
       const data = await response.json();
       console.log(data);
       setPhotos((oldPhotos) => {
-        return [...oldPhotos, ...data];
+        if()
       });
       setLoading(false);
     } catch (error) {
