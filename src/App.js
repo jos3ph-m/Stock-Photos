@@ -45,6 +45,7 @@ function App() {
   };
   useEffect(() => {
     fetchImages();
+    // eslint-disable-next-line
   }, [page]);
   useEffect(() => {
     const event = window.addEventListener('scroll', () => {
