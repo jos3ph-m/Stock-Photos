@@ -29,7 +29,8 @@ function App() {
       const data = await response.json();
       console.log(data);
       setPhotos((oldPhotos) => {
-        if()
+        if (query) {
+        }
       });
       setLoading(false);
     } catch (error) {
