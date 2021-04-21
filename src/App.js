@@ -30,6 +30,7 @@ function App() {
       console.log(data);
       setPhotos((oldPhotos) => {
         if (query) {
+          return [...oldPhotos, ...data.results];
         }
       });
       setLoading(false);
