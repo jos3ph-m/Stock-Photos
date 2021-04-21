@@ -31,6 +31,8 @@ function App() {
       setPhotos((oldPhotos) => {
         if (query) {
           return [...oldPhotos, ...data.results];
+        } else {
+          return [...oldPhotos, ...data];
         }
       });
       setLoading(false);
