@@ -61,6 +61,7 @@ function App() {
   }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
+    setPage();
     fetchImages();
   };
   return (
